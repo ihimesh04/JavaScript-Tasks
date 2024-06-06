@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Math Operation </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('Pic-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Math Operation </h1>
+</body>
+<script>
+
+    // Math Operation:- 
+    function add(x, y) {
+
+        var output = x + y;
+
+        return output;
+    }
+
+    function subtract(x, y) {
+
+        var output = x - y;
+
+        return output;
+    }
+
+    function multiply(x, y) {
+
+        var output = x * y;
+
+        return output;
+    }
+
+    function divide(x, y) {
+
+        var output = x / y;
+
+        return output;
+    }
+
+    var a, b, result;
+
+    a = Number(prompt('Enter the number 1 here'));
+
+    b = Number(prompt('Enter the number 2 here'));
+
+    do {
+
+        choice = prompt('Enter the choice here (+,-,*,/)');
+
+        switch (choice) {
+
+            case '+': {
+
+                result = add(a, b);
+                break;
+            }
+
+            case '-': {
+
+                result = subtract(a, b);
+                break;
+            }
+
+            case '*': {
+
+                result = multiply(a, b);
+                break;
+            }
+
+            case '/': {
+
+                result = divide(a, b);
+                break;
+            }
+
+            default: {
+
+                result = 'Please enter the valid choice';
+            }
+
+        }
+    } while (result == 'Please enter the valid choice' );
+
+    document.write(`Result = ${result}`);
+</script>
+
+</html>

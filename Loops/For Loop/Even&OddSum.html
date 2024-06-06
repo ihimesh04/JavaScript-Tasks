@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Even & Odd Sum </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('./Pic-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Even & Odd Sum </h1>
+</body>
+<script>
+
+    // Even & Odd Sum:-
+    var evensum = 0;
+
+    var oddsum = 0;
+
+    for (var i = 1; i <= 100; i++) {
+
+        if (i % 2 == 0) {
+
+            evensum = evensum + i;
+
+        } else {
+
+            oddsum = oddsum + i;
+
+        }
+    }
+
+    document.write('Sum of the even numbers = ' + evensum + "<br/>");
+    document.write('Sum of the odd numbers = ' + oddsum + "<br/>");
+</script>
+
+</html>

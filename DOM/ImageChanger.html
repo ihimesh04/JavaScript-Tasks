@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Image Changer </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-image: url('/Images/Pic-11.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        main {
+            width: 800px;
+            height: auto;
+            padding: 10px;
+            margin: 50px auto;
+            border-radius: 20px;
+        }
+
+        h1 {
+            padding: 20px 0px;
+        }
+
+        #frame {
+            width: 100%;
+            height: 300px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .boxes {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            border: 10px solid white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .box {
+            width: 20%;
+            height: 200px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        img {
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Image Changer </h1>
+    <main>
+        <div id="frame">
+            <img src="/Images/Pic-17.jpg" alt="">
+        </div>
+        <div class="boxes">
+            <div class="box"> <img src="/Images/Pic-1.jpg" alt=""> </div>
+            <div class="box"> <img src="/Images/Pic-4.jpg" alt=""> </div>
+            <div class="box"> <img src="/Images/Pic-3.jpg" alt=""></div>
+            <div class="box"> <img src="/Images/Pic-5.jpg" alt=""> </div>
+        </div>
+    </main>
+</body>
+<script>
+
+    // Image Changer:-
+    let boxes = document.querySelector('.boxes');
+
+    let screen = document.querySelector('img');
+   
+    boxes.addEventListener('click',
+    
+        (e) => {
+
+            if(e.target.tagName == 'IMG') {
+
+                screen.src = e.target.src;
+            }
+        }
+    )
+
+    // img1.addEventListener('click',
+    //     () => {
+    //         screen.src = img1.src;
+    //     }
+    // )
+
+
+    // let changeImage = (obj) => {
+    //     screen.src = obj.src;
+    // }
+    
+</script>
+</html>

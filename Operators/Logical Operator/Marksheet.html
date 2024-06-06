@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Marksheet </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('./Pic-2.jpg');
+            background-size: cover;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Marksheet </h1>
+</body>
+<script>
+
+    // Marksheet:-
+    var Maths = Number(prompt('Enter the marks of subject Maths'));
+
+    var Science = Number(prompt('Enter the marks of subject Science'));
+
+    var English = Number(prompt('Enter the marks of subject English'));
+
+    var Hindi = Number(prompt('Enter the marks of subject Hindi'));
+
+    var Sst = Number(prompt('Enter the marks of subject Social Studies'));
+
+    var Physical = Number(prompt('Enter the marks of subject Physical Education'));
+
+    var Computer = Number(prompt('Enter the marks of subject Computer'));
+
+    var output = (Maths > 35) && (Science > 35) && (English > 35) && (Hindi > 35) && (Sst > 35) && ((Physical > 35) || (Computer > 35));
+
+    document.write(output);
+
+</script>
+
+</html>

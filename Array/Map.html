@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Map Method </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        body {
+            background-image: url('/Images/Pic-10.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Map Method </h1>
+</body>
+<script>
+
+    // Map Method:-
+    const numbers = [2, 4, 3, 1, 5];
+
+    const numbers2 = numbers.map(
+
+        (value, index, array) => {
+
+            return value * 2;
+
+        }
+    );
+
+    console.log(numbers2);
+
+</script>
+
+</html>

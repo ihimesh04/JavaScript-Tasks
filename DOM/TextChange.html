@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Text Change </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('/Images/Pic-10.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+
+        #main {
+            display: table;
+            padding: 15px;
+            margin: 50px auto;
+
+        }
+
+        .boxes {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 0.1px solid black;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        #buttons {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            font-size: 25px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="boxes">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+        <div id="buttons">
+            <button onclick="changeText('B1',0)">B1</button>
+            <button onclick="changeText('B2',1)">B2</button>
+            <button onclick="changeText('B3',2)">B3</button>
+        </div>
+    </div>
+</body>
+<script>
+
+    //Text Change:-
+    let boxes = document.querySelectorAll('.box');
+
+    //    let box1 = boxes[0];
+    //    let box2 = boxes[1];
+    //    let box3 = boxes[2];
+
+    let changeText = (text, index) => {
+
+        boxes[index].innerText = text
+    }
+
+    //    let changeText1 = () => {
+
+    //         box1.innerText = 'B1';
+    //    }
+
+    //    let changeText2 = () => {
+
+    //         box2.innerText = 'B2';
+    //    }
+
+    //    let changeText3 = () => {
+
+    //         box3.innerText = 'B3';
+    //    }
+
+</script>
+
+</html>

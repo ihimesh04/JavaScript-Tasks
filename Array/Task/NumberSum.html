@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Number Sum </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        body {
+            background-image: url('/Images/Pic-10.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Number Sum </h1>
+</body>
+<script>
+
+    // Number Sum:-
+
+    let sum = 0;
+
+    const numbers = [55, 23, 50, 78, 6, 7, 43, 100];
+
+    numbers.forEach(
+
+        (value) => {
+
+            sum = sum + value;
+        }
+    )
+
+    document.write(`sum = ${sum}`);
+
+
+</script>
+
+</html>

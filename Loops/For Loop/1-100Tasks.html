@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Printing Numbers (1 to 100) </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('./Pic-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Printing Numbers from (1 to 100) (100 to 1) (Even and Odd Numbers) </h1>
+</body>
+<script>
+
+    // Print Numbers 1 to 100:-
+    // for (var i = 1; i <= 100; i++) {
+    //     document.write(i + "<br/>");
+    // }
+
+
+
+    // Print Numbers 100 to 1:-
+    // for (var i = 100; i >= 1; i--) {
+    //     document.write(i + "<br/>");
+    // }
+
+
+
+    // Printing even numbers from 1 to 100 using a for loop:-
+    for (var i = 1; i <= 100; i++) {
+        if (i % 2 == 0) {
+
+            document.write(i + "<br/>");
+        }
+    }
+
+
+    // Printing odd numbers from 1 to 100 using a for loop:-
+    // for (var i = 1; i <= 100; i++) {
+    //     if (i % 2 !== 0) {
+
+    //         document.write(i + "<br/>");
+    //     }
+    // }
+</script>
+
+</html>

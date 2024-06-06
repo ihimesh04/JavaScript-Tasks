@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table Print </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('Pic-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Table Print </h1>
+</body>
+<script>
+
+
+    // Table Print:-
+    do {
+
+        var n = Number(prompt('Enter the value n here in between (1-100)'));
+
+        while ((n < 0) || (n > 100) || isNaN(n)) {
+
+            n = Number(prompt('Enter the value n here in between (1-100)'));
+
+        }
+
+        for (var i = 1; i <= 10; i++) {
+
+            document.write(`${n} * ${i} = ${n * i} <br/>`);
+
+        }
+
+    } while(confirm('Do you want to continue'));
+
+
+</script>
+
+</html>

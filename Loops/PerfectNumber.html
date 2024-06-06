@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Perfect Number Check </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('Pic-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Perfect Number Check </h1>
+</body>
+<script>
+
+    // Perfect Number:-
+    var n = Number(prompt('Enter the number here'));
+
+    var sum = 0;
+
+    for (var i = 1; i <= n - 1; i++) {
+
+        if(n % i == 0) {
+
+            sum = sum + 1;
+
+        }
+
+    }
+
+    if(sum == n) {
+
+        document.write(`${n} is a Perfect Number`);
+
+    } else {
+
+        document.write(`${n} is a Perfect Number`);
+    }
+
+</script>
+
+</html>

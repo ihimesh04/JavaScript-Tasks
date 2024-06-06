@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> User Range Print </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('./Pic-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> User Range Print </h1>
+</body>
+<script>
+
+    // User Range Print:-
+    var start = Number(prompt('Enter the start point here'));
+
+    var end = Number(prompt('Enter the end point here'));
+
+
+    if (end > start) {
+
+        for (var i = start; i <= end; i++) {
+
+            document.write(i + "<br/>");
+
+        }
+
+    } else {
+
+        for (var i = start; i >= end; i--) {
+
+            document.write(i + "<br/>")
+        }
+
+    }
+
+</script>
+
+</html>

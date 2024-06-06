@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ForEach Method </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        body {
+            background-image: url('/Images/Pic-10.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> ForEach Method </h1>
+</body>
+<script>
+
+    // ForEach Method:-
+    const even = [2, 4, 6, 8, 10];
+
+    const mix = [2, 'Red', 4, 'Green', 6, 'Yellow', 8, 10];
+
+    mix.forEach() {
+
+        function(value, index, array) {
+
+            document.write(`${index} : ${value} : ${array} <br/>`);
+        }
+    }
+
+    even.forEach(
+
+        (value, index, array) => {
+
+            document.write(`${index} : ${value} : ${array} <br/>`);
+        }
+    )
+
+
+    // function printData(value,index,array) {
+
+    //     document.write(`${index} : ${value} : ${array} <br/>`);
+    // }
+
+    // even.forEach(printData);
+
+</script>
+
+</html>

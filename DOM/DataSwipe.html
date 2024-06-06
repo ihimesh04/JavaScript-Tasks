@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Swipe Data </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('/Images/Pic-10.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            margin-top: 50px;
+            padding: 30px 0px;
+            text-decoration: underline;
+        }
+
+        .main {
+            width: 800px;
+            height: 300px;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .boxes {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .box {
+            width: 40%;
+            padding: 20px;
+            border: 5px solid red;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="boxes">
+            <div class="box">
+                Well-curated basic to advanced interview questions on Python programming, categorized into freshers and
+                experienced professionals. Also, find tips to fast-track a career in Python.
+            </div>
+            <div class="box">
+                A list of top C programming interview questions and answers for both freshers & experienced candidates
+                to prepare and boost chances of selection.
+            </div>
+        </div>
+        <button> Swipe the Data </button>
+    </div>
+</body>
+<script>
+
+    // Swipe The Data:-
+    //     let swipe_data = () => {
+
+    //         let box3 = box1.innerText;
+
+    //         box1.innerText = box2.innerText;
+
+    //         box2.innerText = box3;
+    //    }
+
+    let boxes = document.querySelectorAll('.box');
+
+    let box1 = boxes[0];
+
+    let box2 = boxes[1];
+
+    let btn = document.querySelector('button');
+
+    btn.addEventListener('click',
+
+        () => {
+            let box3 = box1.innerText;
+
+            box1.innerText = box2.innerText;
+
+            box2.innerText = box3;
+        }
+    );
+
+</script>
+
+</html>
